@@ -1,0 +1,109 @@
+/*====================
+* @project SLM360
+* @version 1.0
+* @author Thiago Aguiar - Photon Group
+* @copyright 2015
+====================*/
+
+/* ==================== font-face ==================== */
+/*avenir book*/
+@font-face {
+	font-family: "avenir_book";
+	src: url("../fonts/avenir_book/avenir-book.eot");
+	src: url("../fonts/avenir_book/avenir-book.eot#iefix") format("embedded-opentype"),
+		 url("../fonts/avenir_book/avenir-book.woff") format("woff"),
+		 url("../fonts/avenir_book/avenir-book.ttf") format("truetype"),
+		 url("../fonts/avenir_book/avenir-book.svg") format("svg"); font-weight: normal; font-style: normal;
+}
+
+/*helvetica neue condensed light*/
+@font-face {
+	font-family: "helvetica_neue_cond_light";
+	src: url("../fonts/helvetica_neue/helvetica-condensed-light.eot");
+	src: url("../fonts/helvetica_neue/helvetica-condensed-light.eot#iefix") format("embedded-opentype"),
+		 url("../fonts/helvetica_neue/helvetica-condensed-light.woff") format("woff"),
+		 url("../fonts/helvetica_neue/helvetica-condensed-light.ttf") format("truetype"),
+		 url("../fonts/helvetica_neue/helvetica-condensed-light.svg") format("svg"); font-weight: normal; font-style: normal;
+}
+
+/* ==================== reset ==================== */
+html{color: #000; background: transparent;} html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0;padding:0} table{border-collapse:collapse;border-spacing:0} fieldset,img{border:0} address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal} ol,ul{list-style:none} caption,th{text-align:left} h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal} q:before,q:after{content:''} abbr,acronym{border:0;font-variant:normal} sup{vertical-align:text-top}sub{vertical-align:text-bottom} input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%} legend{color:#000} #yui3-css-stamp.cssreset{display:none}
+
+/* ==================== global ==================== */
+* {-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {font-family: 'avenir_book'; font-size: 1em; list-style-type: none; text-decoration: none; margin: 0; padding: 0;}
+.grid {width: 978px; height: auto; margin: 0 auto; position: relative; display: block;}
+.bgPostFeatured {text-align: center; width: 100%; height: 100%; margin: 0 auto; position: fixed; top: 0; left: 0; z-index: 0;}
+.bgPostFeatured img {margin: 0 0 0 -960px; position: absolute; top: 0; left: 50%;} header, .container {z-index: 1;}
+.tudo {background-color: #00aeef;} .noticias {background-color: #f62e81;} .dicas {background-color: #f3d739;} .dietas {background-color: #29db61;} .historias {background-color: #6a29db;} .superalimentos {background-color: #ff6d05;} .exercicios {background-color: #ff0550;} .receitas {background-color: #0579ff;} .curiosidades {background-color: #d627dc;}
+
+/* ==================== header ==================== */
+header {width: 100%; height: 200px; position: relative; display: block;}
+header .search {background-color: #FFFFFF; width: 100%; margin: 0 auto; position: relative; display: block;}
+header .search nav {height: 48px; margin: 0 auto; position: relative; display: block;}
+header .search nav ul {text-align: left; width: 580px; height: 100%; position: relative; display: block; float: left;}
+header .search nav ul li {width: auto; height: 100%; margin: 0 20px 0 0; position: relative; display: inline-block;}
+header .search nav ul li a {position: relative; display: inline-block;}
+header .search nav ul li.healwheel a {background: url(../img/logo-healwheel-50x40.png?no_cache=1) 0 5px no-repeat; width: 50px; height: 40px;}
+header .search nav ul li.greencoffee a {background: url(../img/logo-green_coffee-160x20.png?no_cache=1) 0 20px no-repeat; width: 160px; height: 40px;}
+header .search nav ul li.goji a {background: url(../img/logo-goji-70x20.png?no_cache=1) 0 20px no-repeat; width: 70px; height: 40px;}
+header .search nav ul li.thermo a {background: url(../img/logo-thermo-100x20.png?no_cache=1) 0 20px no-repeat; width: 100px; height: 40px;}
+header .search nav ul li.detox a {background: url(../img/logo-detox-90x20.png?no_cache=1) 0 20px no-repeat; width: 90px; height: 40px;}
+header .brand {border-bottom: 1px solid #bec2c3; width: 100%; height: 87px; margin: 0 0 3px 0; padding: 10px 0; position: relative; display: block; overflow: hidden;}
+header .brand nav {height: 100%; position: relative; display: block;}
+header .brand .logo {margin: 18px 0 15px 0; position: relative; display: block; float: left;}
+header .brand .ads-730x90 {background-color: #FFFFFF; width: 730px; height: 90px; position: relative; display: block; float: right; overflow: hidden;}
+header .brand .ads-730x90 img {margin: -100px 0 0 0; position: absolute; top: 50%; left: -30px; z-index: 0;}
+header .brand .ads-730x90 div {text-align: right; width: 345px; height: 70px; margin: 10px; position: relative; display: block; float: right; z-index: 1;}
+header .brand .ads-730x90 div p {line-height: 1.1em; position: relative; display: block; float: right;} 
+header .brand .ads-730x90 div .download {width: 122px; margin: 15px 0 0 0;} header .brand .ads-730x90 div .download a {color: #000000; font-weight: 500;}
+header .brand .ads-730x90 div .download a span {background: url(../img/ico_download-20x20.png?no_cache=1) 0 -1px no-repeat; width: 20px; height: 20px; position: relative; float: left;}
+header .menu {background: url(../img/bg_menu-1x1.png?no_cache=1) 0 0 repeat; width: 100%; height: 40px; position: relative; display: block;}
+header .menu nav {height: 100%; position: relative; display: block;}
+header .menu nav ul {text-align: center; width: 100%; height: 100%; position: relative; display: block;}
+header .menu nav ul li {width: auto; height: 100%; position: relative; display: inline-block; vertical-align: top; cursor: pointer;}
+header .menu nav ul li:hover, header .menu nav ul li.actived {background-color: #f3f4f4;}
+header .menu nav ul li .tarje {width: 100%; height: 4px; position: absolute; top: 0; left: 0; z-index: 1;}
+header .menu nav ul li .item {text-align: center; font-family: 'helvetica_neue_cond_light'; font-size: 1.5em; font-weight: lighter; line-height: 1.250em; letter-spacing: normal; position: relative; display: block; top: 0.38em;}
+header .menu nav ul li#tudo {width: 65px;} header .menu nav ul li#noticias {width: 90px;} header .menu nav ul li#dicas {width: 77px;} header .menu nav ul li#dietas {width: 82px;} header .menu nav ul li#historias {width: 117px;} header .menu nav ul li#superalimentos {width: 169px;} header .menu nav ul li#exercicios {width: 129px;} header .menu nav ul li#receitas {width: 102px;} header .menu nav ul li#curiosidades {width: 147px;}
+
+/* ==================== container ==================== */
+.container {text-align: center; width: 100%; margin: 0 auto; position: relative; display: block;}
+.container .content {padding: 35px 0 0 0; display: inline-block;}
+.container .news {background-color: #FFFFFF; -webkit-box-shadow: 1px -7px 24px -12px rgba(51,51,51,1); -moz-box-shadow: 1px -7px 24px -12px rgba(51,51,51,1); box-shadow: 1px -7px 24px -12px rgba(51,51,51,1); text-align: center; width: 100%; height: 220px; position: absolute; top: 0; left: 0; z-index: 100; display: none;}
+.container .news .bar {width: 100%; height: 4px; position: absolute; bottom: 0; left: 0; z-index: 2;}
+.container .news .area {width: 928px; height: 170px; margin: 25px 0 0 0; position: relative; display: inline-block;}
+.container .news .send {width: 350px; height: 170px; margin: 0 0 0 0; float: right;}
+.container .news .send .archive {text-align: center; width: 135px; height: 100%; position: relative; display: block; float: left;}
+.container .news .send .archive a {background-color: #f4f4f4; width: 100%; height: 100%; position: relative; display: block; float: left;}
+.container .news .send .archive a:hover {background-color: #e1e1e1;}
+.container .news .send .archive span {position: relative; display: block;}
+.container .news .send .archive .plus {font-size: 6em; font-weight: lighter; color: #00acec;}
+.container .news .send .archive .desc {color: #000000;}
+.container .news .send .register {width: 205px; height: 100%; position: relative; display: block; float: right;}
+.container .news .send .register p {line-height: 1.2em;}
+.container .news .send .register form {width: 100%; height: auto; margin: 12px 0 0 0; position: relative; display: block; float: left;}
+.container .news .send .register form fieldset legend {display: none;}
+.container .news .send .register form fieldset label {width: 190px; height: auto; margin: 1px auto; position: relative; display: inline-block;}
+.container .news .send .register form fieldset label div {background-color: #FFFFFF; border: 2px solid #C1C1C1; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; width: 190px; height: 28px; position: relative; display: block; float: left; overflow: hidden;}
+.container .news .send .register form fieldset label div input:focus {outline: none;}
+.container .news .send .register form fieldset label div input[type='text'],
+.container .news .send .register form fieldset label div input[type='password'] {font-size: 0.9em; border: 0 none; color: #000000; width: 98.6%; height: 94.5%; margin: 0.02em 0 0 0.5em; position: absolute; top: 0; left: 0;}
+.container .news .send .register form fieldset label input[type='submit'] {background-color: #00acec; font-weight: 600; color: #FFFFFF; border: 0 none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; padding: 5px 15px; position: relative; display: block; float: right; cursor: pointer;}
+.container .post {background-color: #FFFFFF; position: relative; display: block;}
+.container .post img {position: absolute; top: 0; left: 0; z-index: 0;}
+.container .post.main {width: 560px; height: 370px; float: left;} 
+.container .post.more {width: 270px; height: 170px; margin: 0 15px 0 0; float: left;}
+.container .post.side {width: 408px; height: 180px; margin: 0 0 10px 0; float: right;}
+.container .post.side.first {} .container .post.side.last {margin: 0;}
+.container .post .opacity {background-color: #FFFFFF; -moz-opacity:0.85; -khtml-opacity:0.85; opacity:0.85; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0;}
+.container .post .tarje {height: 8px; position: absolute; top: -4px; left: 0; z-index: 1;}
+.container .post.main .tarje {width: 130px;} .container .post.side .tarje {width: 80px;} .container .post.more .tarje {width: 80px;}
+.container .post .caption {width: 100%; position: absolute; bottom: 0; left: 0; z-index: 1;}
+.container .post .caption p {text-align: center; height: auto; position: absolute; top: -15px; left: 0; z-index: 1;}
+.container .post .caption p span {text-align: center; font-family: 'helvetica_neue_cond_light'; font-size: 1.5em; font-weight: lighter; line-height: 1.250em; color: #FFFFFF; padding: 0 15px; position: relative; display: block; top: 0.055em; top: 0.15em\0;}
+.container .post .caption .text {color: #000000; position: relative; display: block; float: left; z-index: 2;}
+.container .post.main .caption {height: 50px;} .container .post.side .caption {height: 40px;}
+.container .post.main .caption .text {font-size: 1.2em; margin: 20px 0 0 10px;} 
+.container .post.side .caption .text {margin: 17px 0 0 10px;} 
+.container .post.more .caption .text {margin: 5px 0 5px 10px;}
